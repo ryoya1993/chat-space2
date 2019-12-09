@@ -1,0 +1,34 @@
+-# .side-bar
+-#   .side-header
+-#     .side-header__box
+-#       .side-header__box__user-name
+-#         もりもり
+-#     .side-header__box__menu
+-#     .side-header__box__icon
+-#       = link_to "#" do
+-#         = icon('fa', 'cog')
+-#       = link_to "#" do
+-#         = icon('fa', 'edit')
+-#   .groups
+-#     .group
+-#       .group__group-name
+-#         もりもりチーム
+-#       .group__latest-message
+-#         まだメッセージがありません
+.side-bar
+  .header
+    %h3.header__name
+      もりもり
+    %ul.header__lists
+      %li.list
+        = link_to '#' do
+          = icon('fa', 'edit',class: 'icon')
+      %li.list
+        = link_to '#' do
+          = icon('fa', 'cog',class: 'icon')
+  .groups
+    .group
+      .group__name
+        もりもりチーム
+      .group__message
+        新着メッセージ
