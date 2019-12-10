@@ -1,0 +1,17 @@
+.side-bar
+  .header
+    %h3.header__name
+      もりもり
+    %ul.header__lists
+      %li.list
+        = link_to '#' do
+          = icon('fa', 'edit',class: 'icon')
+      %li.list
+        = link_to '#' do
+          = icon('fa', 'cog',class: 'icon')
+  .groups
+    .group
+      .group__name
+        もりもりチーム
+      .group__message
+        新着メッセージ
