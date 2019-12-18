@@ -14,6 +14,6 @@
       .group
         = link_to group_messages_path(group.id),class:"link" do
           .group__name
-            もりもりチーム
+            = group.name
           .group__message
-            まだメッセージはありません
+            = group.show_last_message
