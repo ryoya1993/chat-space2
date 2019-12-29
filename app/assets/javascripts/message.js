@@ -92,7 +92,6 @@ var reloadMessages = function() {
 	})
 	.fail(function() {
 		alert('error');
-		console.log('error');
 	});
 };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
