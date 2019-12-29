@@ -1,6 +1,5 @@
 $(function(){ 
-	// last_message_id = $('.message:last').data("message-id");
-  // console.log(last_message_id);
+
 	function buildHTML(message){
 	 if ( message.image ) {
 		 var html =
@@ -90,9 +89,9 @@ var reloadMessages = function() {
 		$("#new_message")[0].reset();
 		$(".form__submit").prop("disabled", false);
 	}
-		console.log('success');
 	})
 	.fail(function() {
+		alert('error');
 		console.log('error');
 	});
 };
